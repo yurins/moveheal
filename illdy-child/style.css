@@ -1,0 +1,134 @@
+/*
+Theme Name: Illdy Child
+Theme URI: http://colorlib.com/wp/themes/illdy-child
+Author: Colorlib
+Author URI: http://colorlib.com
+Template: illdy
+Version: 2.1.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: illdy-child
+*/
+
+html {
+  overflow-x: hidden;
+}
+
+#header .top-header .header-logo {
+  font-size: 35px;
+  line-height: 50px;
+}
+
+/*Fix instagram icon on footer*/
+.social-icons ul li.instagram a:before {
+    content: "\f16d";
+    font-family: FontAwesome;
+}
+
+/*remove HOME header*/
+#static-page-content > div.section-header{
+  display:none;
+}
+
+#header .is-sticky .top-header {
+  opacity: .9;
+  box-shadow: 0px 3px 10px #999;
+}
+
+/*Scroll to top icon*/
+#toTop {
+  position:fixed;
+  bottom:5em;
+  right:.8em;
+  cursor:pointer; 
+  z-index: 99;
+} 
+
+/*****ABOUT*****/
+
+/* Hide About section content */
+#about .section-content {
+  display: none;
+}
+
+/******TEAM SECTION*****/
+
+
+/*.widget_illdy_person{
+width: 50%;
+}*/
+
+/*Image size*/
+#team .section-content .person .person-image img {
+max-width: none;
+height: auto;
+width: 132px;
+}
+
+/******BLOG SECTION*****/
+
+#latest-news .section-content .post {
+  box-shadow: 10px 10px 8px -2px #000;
+}
+
+
+/******CONTACT SECTION*****/
+
+.fa-facebook-f:before,
+.fa-facebook:before,
+.fa-instagram:before {
+  font-size: 25px;
+}
+
+
+
+/******FOOTER*******/
+
+/*remove entire footer*/
+ footer#footer {
+    display: none;
+}
+
+.bottom-footer {
+  background-color: #EADEDB;
+}
+
+
+
+/*****MEDIA QUERY******/
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+
+/*****TEAM*****/
+
+ #team .section-content .person .person-content {
+   width: 100%;
+  }
+ #team .section-content .person .person-image {
+    width: 100%;
+    margin-right: 0px;
+    float: none;
+  }
+ #team .section-content .person .person-image img {
+    margin-right: 0px;
+  }
+ #team .section-content .person .person-content {
+    text-align: left;
+  }
+ }
+
+@media only screen and (min-width: 1025px) {
+ #contact-us .section-content
+ .contact-us-social {
+    position: relative;
+    top: 20px;
+    right: 10px;
+  }
+
+ #header .top-header .header-logo {
+    font-size: 40px;
+  }
+
+ }
+
+
